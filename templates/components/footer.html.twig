@@ -1,0 +1,33 @@
+<footer class=" bg-black flex justify-around text-white py-8">
+    <a href="{{ path('app_home') }}">
+        <img src="{{ asset('img/logo-corporats-v2-dark.png')}}" alt="Logo Corpo-Rats" class="h-64"/>
+    </a>
+    <ul class="text-center flex flex-col gap-2 justify-center">
+        <li class="font-semibold">CORPO-RATS</li>
+        <li>17 rue des Talents à Fourrure</li>
+        <li>80000 Amiens</li>
+        <br>
+        <a href="phoneto:0102030405">01 02 03 04 05</a>
+        <a href="mailto:contact@corpo-rats.fr">contact@corpo-rats.fr</a>
+
+    </ul>
+    <nav class="flex items-center text-end">
+        <ul class="flex flex-col gap-3 font-light">
+            <li>
+                <a href="{{ path('app_services') }}">
+                    Nos services
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('app_about') }}">
+                    À propos
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('app_contact') }}">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+</footer>

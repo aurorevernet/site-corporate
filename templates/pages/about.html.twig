@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Corpo-Rats - À propos{% endblock %}
+
+{% block body %}
+    <section>
+        <h2 class="bg-black w-fit py-4 px-6 text-white">À propos</h2>
+        <div class="py-20 flex flex-col gap-20">
+            <h3 class="bg-black w-fit py-4 px-6 text-white mx-auto text-center">Notre histoire</h3>
+            <div class="flex justify-center gap-10">
+                <div class="flex flex-col items-center gap-2">
+                    <img src="{{ asset('img/rat-remy.jpg') }}" class="w-96"></img>
+                    <span><strong>Remy</strong>, le rat du fondateur de <strong>Corpo-rats</strong></span>
+                    <span><i>(oui, il est l'acteur dans Ratatouille !)</i></span>
+                </div>
+                <div class="w-1/3">
+                    <p>
+                        Tout a commencé avec un petit rat nommé <span class="highlight">Remy, compagnon de longue date de notre fondateur</span>. Ce rat, curieux et plein de vie, a montré un talent naturel pour l'acteur, ce qui a incité son maître à l'intégrer dans des projets cinématographiques amateurs. Très vite, le duo a été remarqué pour leur synchronisation parfaite et la capacité de Remy à réaliser des scènes complexes, tantôt comiques, tantôt dramatiques. 
+                    </p>
+                    <br>
+                    <p>
+                        C'est ainsi qu'en <span class="highlight">2025</span>, <strong>Corpo-Rats</strong> est née, avec une mission simple mais audacieuse : offrir des rats acteurs pour des productions qui recherchent des talents à quatre pattes. L’entreprise s'est rapidement imposée comme <span class="highlight">leader dans la location de rats pour films, publicités et spectacles</span>, alliant professionnalisme et une touche d’humour bien à elle.
+                    </p>
+                </div>
+            </div>
+            <h3 class="bg-black w-fit py-4 px-6 text-white mx-auto text-center">Nos valeurs</h3>
+            <div class="flex flex-col items-center gap-10">
+                <p>Chez <strong>Corpo-Rats</strong>, nous croyons que chaque créature, grande ou petite, a un rôle à jouer. Nos valeurs fondamentales sont :</p>
+                <ul class="flex flex-col gap-5 w-1/3 list-disc">
+                    <li><span class="highlight">Créativité</span> : Nous croyons en l'innovation et dans l'importance de repousser les limites du possible. Nos rats sont plus que de simples animaux, ce sont de véritables artistes qui apportent leur touche unique à chaque projet.</li>
+                    <li><span class="highlight">Respect</span> : Nous accordons une attention particulière au bien-être de nos rats acteurs. Leur confort et sécurité sont notre priorité absolue, et nous nous assurons qu'ils soient toujours traités avec le plus grand respect.</li>
+                    <li><span class="highlight">Humilité</span> : Malgré notre succès, nous restons une entreprise familiale, fière de ses origines modestes et de l’impact que nos petites stars à quatre pattes ont sur le monde du cinéma.</li>
+                </ul>
+            </div>
+            <h3 class="bg-black w-fit py-4 px-6 text-white mx-auto text-center">Nos missions</h3>
+            <div class="flex flex-col items-center gap-10">
+                <p><strong>Corpo-Rats</strong> a pour mission de faire briller les talents peu connus du grand écran, et ce, de manière innovante et divertissante. Nous nous engageons à :</p>
+                <ul class="flex flex-col gap-5 w-1/3 list-disc">
+                    <li>Fournir des rats formés et professionnels pour des productions cinématographiques, des publicités ou tout autre spectacle où la précision et le naturel d’une prestation animalière sont essentiels.</li>
+                    <li>Créer des partenariats durables avec les studios, les réalisateurs et les agences de publicité pour répondre aux besoins créatifs les plus ambitieux.</li>
+                    <li>Promouvoir une approche éthique et respectueuse dans l’utilisation des animaux, tout en garantissant un environnement de travail stimulant et sûr.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+{% endblock %}

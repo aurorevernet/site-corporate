@@ -1,0 +1,24 @@
+<header class="flex justify-center relative h-60 text-white">
+    <a href="{{ path('app_home') }}" class="grow flex justify-end absolute">
+        <img src="{{ asset('img/logo-corporats-v2.png')}}" alt="Logo Corpo-Rats" class="h-60"/>
+    </a>
+    <nav class="grow flex justify-end items-center">
+        <ul class="flex gap-10 bg-black h-fit py-4 px-6">
+            <li>
+                <a href="{{ path('app_services') }}">
+                    Nos services
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('app_about') }}">
+                    À propos
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('app_contact') }}">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

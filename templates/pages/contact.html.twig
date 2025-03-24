@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Corpo-Rats - Contactez-nous !{% endblock %}
+
+{% block body %}
+
+<section>
+    <h2 class="bg-black w-fit py-4 px-6 text-white">Contactez-nous !</h2>
+    <div class="flex flex-col items-center py-20">
+        <p class="text-center mb-10 w-3/4">
+            Que vous soyez un <span class="highlight">réalisateur</span>, une <span class="highlight">agence publicitaire</span> ou un <span class="highlight">particulier passionné</span>, 
+            Corpo-Rats est là pour répondre à vos besoins. <br> Remplissez le formulaire ci-dessous 
+            et nous reviendrons vers vous rapidement !
+        </p>
+        <form method="POST" class="border border-black p-6 max-w-lg mx-auto bg-white w-full">
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <label name="name" for="name">Votre <strong>nom</strong></label>
+                    <input type="text" name="name" required placeholder="Comment vous appelez-vous, humain ?" class="border border-black p-3 focus:outline-none focus:ring-2 focus:ring-black bg-gray-100">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label name="email" for="email">Votre <strong>email</strong></label>
+                    <input type="email" name="email" required placeholder="Pour discuter de contrats avec des stars à quatre pattes." class="border border-black p-3 focus:outline-none focus:ring-2 focus:ring-black bg-gray-100">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label name="message" for="message">Votre <strong>message</strong></label>
+                    <input type="textarea" name="message" required placeholder="Parlons collaboration..." class="border border-black p-3 focus:outline-none focus:ring-2 focus:ring-black bg-gray-100">
+                </div>
+                <button type="submit" class="bg-black text-white py-3 px-6 hover:bg-red-600">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

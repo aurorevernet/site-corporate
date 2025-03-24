@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Corpo-Rats - Accueil{% endblock %}
+
+{% block body %}
+
+<section class="flex flex-col gap-20 py-20">
+    <div class="flex justify-center gap-10">
+        <img src="{{ asset('img/rat-star.jpg')}}" alt="" class="w-96"/>
+        <div class="flex flex-col gap-10 w-1/2">
+            <div class="flex flex-col gap-5">
+                <h3>L’élite des rats du grand écran</h3>
+                <p>Bienvenue chez Corpo-Rats, la première agence dédiée à la <span class="highlight">formation de rats pour le cinéma, la publicité et le spectacle</span> ! Grâce à notre expertise, nous préparons ces petits rongeurs à devenir de véritables stars, prêts à briller sous les projecteurs.</p>
+            </div>
+            <div class="flex flex-col gap-5">
+                <h3>Des rats au talent unique</h3>
+                <p>Nos acteurs à quatre pattes sont <span class="highlight">sélectionnés et formés avec soin</span> pour incarner une grande variété de rôles. De la scène dramatique au film d’action, en passant par des spots publicitaires inoubliables, nos rats s’adaptent à toutes les exigences du métier.</p>
+            </div>
+        </div>
+    </div>
+    <h2 class="bg-black w-fit py-4 px-6 text-white mx-auto text-center">Pourquoi nous choisir ?</h2>
+
+    <div class="flex justify-around">
+        <div class="card">
+            <img src="{{ asset('img/formation-mesure.jpg')}}" alt="" class="w-64"/>
+            <h4>Formation sur mesure</h4>
+        </div>
+        <div class="card">
+            <img src="{{ asset('img/casting.jpg')}}" alt="" class="w-64"/>
+            <h4>Casting & sélection</h4>
+        </div>
+        <div class="card">
+            <img src="{{ asset('img/accompagnement.jpg')}}" alt="" class="w-64"/>
+            <h4>Accompagnement sur tournage</h4>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

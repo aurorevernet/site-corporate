@@ -1,3 +1,37 @@
-body {
-    background-color: skyblue;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2,
+h3 {
+  font-size: 26px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+p {
+  text-align: justify;
+}
+
+a:hover {
+  color: oklch(0.577 0.245 27.325);
+}
+
+.highlight {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
