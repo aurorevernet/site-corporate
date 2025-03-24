@@ -5,44 +5,46 @@
 {% block body %}
 <section class="py-16">
     <h2 class="bg-black w-fit py-4 px-6 text-white">Nos services</h2>
-    <div class="flex justify-around py-20">
+    <div class="flex justify-center py-10 px-20 gap-10">
         <!-- Forfait 1 jour -->
-        <div class="border border-gray-300 rounded-lg shadow-md p-6 text-center bg-white">
-            <h3 class="text-xl font-semibold">Forfait 1 Jour</h3>
-            <p class="text-gray-600 mt-2">Idéal pour des scènes courtes ou des essais.</p>
-            <ul class="mt-4 space-y-2 text-gray-700">
+        <div class="flex flex-col gap-5 border text-center bg-white p-10">
+            <img src="{{ asset('img/forfait-1j.jpeg')}}">
+            <h3>Forfait 1 Jour</h3>
+            <p class="text-center">Idéal pour des scènes courtes ou des essais.</p>
+            <ul class="mt-4 space-y-2 grow">
                 <li>🎬 1 rat acteur</li>
                 <li>📍 Présence sur tournage</li>
                 <li>📝 Briefing rapide</li>
             </ul>
-            <button class="mt-6 bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition">Choisir</button>
+            <a href="{{ path('app_contact')}}" class="bg-black text-white py-3 px-6 hover:bg-red-600 w-fit mx-auto text-center">Nous contacter</a>
         </div>
 
         <!-- Forfait 1 semaine -->
-        <div class="border border-gray-300 rounded-lg shadow-md p-6 text-center bg-white">
-            <h3 class="text-xl font-semibold">Forfait 1 Semaine</h3>
-            <p class="text-gray-600 mt-2">Parfait pour des tournages plus longs.</p>
-            <ul class="mt-4 space-y-2 text-gray-700">
+        <div class="flex flex-col gap-5 border text-center bg-white p-10">
+        <img src="{{ asset('img/forfait-1s.jpeg')}}">
+            <h3>Forfait 1 Semaine</h3>
+            <p class="text-center">Parfait pour des tournages plus longs.</p>
+            <ul class="mt-4 space-y-2 grow">
                 <li>🎬 Jusqu'à 3 rats acteurs</li>
                 <li>📍 Accompagnement quotidien</li>
                 <li>🐭 Dressage avancé</li>
                 <li>🎭 Options de comportement spécifique</li>
             </ul>
-            <button class="mt-6 bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition">Choisir</button>
+            <a href="{{ path('app_contact')}}" class="bg-black text-white py-3 px-6 hover:bg-red-600 w-fit mx-auto text-center">Nous contacter</a>
         </div>
 
         <!-- Forfait 1 mois -->
-        <div class="border border-gray-300 rounded-lg shadow-md p-6 text-center bg-white">
-            <h3 class="text-xl font-semibold">Forfait 1 Mois</h3>
-            <p class="text-gray-600 mt-2">Le pack ultime pour des productions ambitieuses.</p>
-            <ul class="mt-4 space-y-2 text-gray-700">
+        <div class="flex flex-col gap-5 border text-center bg-white p-10">
+            <img src="{{ asset('img/forfait-1m.jpeg')}}">
+            <h3>Forfait 1 Mois</h3>
+            <p class="text-center">Le pack ultime pour des productions ambitieuses.</p>
+            <ul class="mt-4 space-y-2 grow">
                 <li>🎬 Jusqu'à 5 rats acteurs</li>
                 <li>📍 Accompagnement total</li>
                 <li>🐭 Dressage personnalisé</li>
                 <li>🔹 Coaching des équipes</li>
-                <li>🎥 Simulation de scènes</li>
             </ul>
-            <button class="mt-6 bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition">Choisir</button>
+            <a href="{{ path('app_contact')}}" class="bg-black text-white py-3 px-6 hover:bg-red-600 w-fit mx-auto text-center">Nous contacter</a>
         </div>
     </div>
 </section>
